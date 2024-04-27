@@ -1,0 +1,29 @@
+PImage fotoPaisaje;
+void setup(){
+  size(800,400);
+  background(255);
+  
+  fotoPaisaje= loadImage ("paisaje.jpg");
+}
+
+void draw(){
+  image(fotoPaisaje,0,0);
+  
+  fill(31, 116, 164);// fondo
+   rect(400,0,460,400);
+   noStroke();
+  
+
+  fill(114, 63, 49,90);
+circle(300,250, 100);
+
+  
+  
+  
+  
+  
+  
+  
+  println("Coordenadas del mouse: ("+mouseX+ "," +mouseY+")");
+}
+    

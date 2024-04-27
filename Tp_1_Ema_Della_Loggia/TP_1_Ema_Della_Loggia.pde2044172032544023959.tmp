@@ -1,0 +1,43 @@
+PImage fotoPaisaje;
+void setup(){
+  size(800,400);
+  background(255);
+  
+  fotoPaisaje= loadImage ("paisaje.jpg");
+}
+
+void draw(){
+  image(fotoPaisaje,0,0);
+  
+  fill(31, 116, 164);// fondo
+   rect(400,0,460,400);
+   noStroke();
+  
+
+  fill(114, 63, 49,150);
+circle(700,10,130);
+
+  
+  fill(149, 66, 44);
+circle(540,10,200);
+  
+  fill(60, 38, 32);
+stroke(203, 119, 34);
+square(590,212,150);
+
+fill(60, 38, 32);
+stroke(203, 119, 34);
+triangle(680,140,529,263,791,263);
+
+fill(215, 142, 70);
+stroke(215, 142, 70);
+square(600,220, 50);
+
+
+
+
+  
+  
+  println("Coordenadas del mouse: ("+mouseX+ "," +mouseY+")");
+}
+    
